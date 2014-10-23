@@ -1,0 +1,74 @@
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background: orange;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+
+body {
+  font-size: 1em;
+  color: red;
+  line-height: 1.2em;
+  text-align: center;
+  background-color: yellow;
+}
+.aboutMe p {
+  float: left;
+  width: 70%;
+}
+
+p {
+  font-size: 2em;
+  line-height: 2.1em;
+}
+ul {
+  list-style-type: none;
+}
+
+
+footer {
+  background-color: red;
+  color: #FFF;
+}
